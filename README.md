@@ -74,7 +74,7 @@ Both models use:
 ## How to Reproduce
 1. Download the dataset (EDF + summary file) from Kaggle/PhysioNet.
 2. Place EDF files under a local folder, e.g.
-   - `Dataset2/chb01/chb01_03.edf`, ...
+   - `chb01/chb01_03.edf`, ...
 3. Open `EEG_SeizureDetection.ipynb`
 4. Set `DATA_DIR` to your local path
 5. Run all cells
