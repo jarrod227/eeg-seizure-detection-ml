@@ -61,7 +61,7 @@ Both models use standardized features (StandardScaler) and are tuned using **Tim
 
 ## Repository Structure
 - `EEG_SeizureDetection.ipynb` — main notebook (full pipeline)
-- (optional) `assets/` — figures (confusion matrices, comparison plot)
+- `assets/` — figures (confusion matrices, comparison plot)
 
 ## References
 - CHB-MIT Scalp EEG Database (PhysioNet): 
