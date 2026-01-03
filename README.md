@@ -3,6 +3,10 @@
 Seizure vs non-seizure classification on the CHB-MIT scalp EEG dataset (subject **chb01**).
 Pipeline: **4s windowing → bandpower features (Welch PSD) → Logistic Regression vs Linear SVM** with time-ordered evaluation.
 
+## Key Takeaways
+- **Linear SVM** achieved better overall performance on the held-out future test set (**Macro-F1 = 0.9012**) with fewer false positives.
+- Because seizure windows are rare, we report **Macro-F1** in addition to accuracy to reflect performance on the minority class.
+
 ## Results (held-out test set)
 - **Logistic Regression**: Accuracy **0.9833**, Macro-F1 **0.8442**
 - **Linear SVM**: Accuracy **0.9908**, Macro-F1 **0.9012**
