@@ -9,6 +9,15 @@ Pipeline: **4s windowing → bandpower features (Welch PSD) → Logistic Regress
 
 > Note: The dataset is highly imbalanced (seizure windows are rare), so **Macro-F1** is reported in addition to accuracy.
 
+### Visual Results
+
+**Confusion Matrices (Test Set)**  
+![Confusion Matrices](assets/confusion_matrices.png)
+
+**Test Performance Comparison (Accuracy + Macro-F1)**  
+![Performance Comparison](assets/test_performance_bar_chart.png)
+
+
 ## Dataset
 - Dataset: CHB-MIT Scalp EEG Database (subject **chb01**)
 - Source: Kaggle mirror of CHB-MIT pediatric EEG (see link in References)
