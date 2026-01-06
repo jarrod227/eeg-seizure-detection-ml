@@ -72,12 +72,23 @@ Both models use:
 ---
 
 ## How to Reproduce
-1. Download the dataset (EDF + summary file) from Kaggle/PhysioNet.
-2. Place EDF files under a local folder, e.g.
-   - `chb01/chb01_03.edf`, ...
-3. Open `EEG_SeizureDetection.ipynb`
-4. Set `DATA_DIR` to your local path
-5. Run all cells
+
+1. Download the CHB-MIT dataset (EDF + summary file) from Kaggle/PhysioNet.
+2. Create a folder named `chb01/` at the repo root, and put the EDF files inside:
+
+   chb01/chb01_03.edf  
+   chb01/chb01_04.edf  
+   chb01/chb01_15.edf  
+   chb01/chb01_16.edf  
+   chb01/chb01_18.edf  
+   chb01/chb01_21.edf  
+   chb01/chb01_26.edf  
+
+3. Install dependencies:
+   - `pip install -r requirements.txt`
+
+4. Open `EEG_SeizureDetection.ipynb`
+5. Set `DATA_DIR` (default is `Path("chb01")`), then run all cells.
 
 ---
 
