@@ -98,6 +98,17 @@ Both models use:
 
 ---
 
+## Limitations
+- **Single subject only** — trained and evaluated on chb01; results may not generalize to other patients without retraining.
+- **Single channel** — uses only F7–T7 (Channel 2). Multi-channel analysis would likely improve performance.
+- **Simple features** — only bandpower in four standard EEG bands. Does not include gamma band, spectral ratios, nonlinear features (e.g., sample entropy), or time-domain statistics beyond mean/std.
+- **Linear models only** — no nonlinear classifiers (Random Forest, XGBoost, CNN/LSTM) were explored.
+- **No class imbalance handling** — seizure windows are ~2% of the data, but no oversampling, undersampling, or `class_weight` adjustment was applied.
+- **No EEG preprocessing** — no bandpass filtering or artifact rejection prior to feature extraction.
+- **Small positive sample size** — only ~115 seizure windows total, which limits statistical reliability.
+
+---
+
 ## References
 - [CHB-MIT Scalp EEG Database (PhysioNet)](https://physionet.org/content/chbmit/)
 - [Kaggle mirror used in this project](https://www.kaggle.com/datasets/abhishekinnvonix/seizure-epilepcy-chb-mit-eeg-dataset-pediatric)
